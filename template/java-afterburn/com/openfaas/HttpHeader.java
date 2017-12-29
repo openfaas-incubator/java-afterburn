@@ -8,9 +8,14 @@ public class HttpHeader {
     private Integer contentLength;
 
     public HttpHeader(String raw)  {
+
+        // Defaults
+        this.contentLength = 0;
+        this.method = "POST";
+
         String[] parts  = raw.split("\n");
 
-        for(int i=0;i<parts.length;i++) {
+        for(int i = 0; i < parts.length; i++) {
             String line = parts[i];
             if (i==0 && line.length() > 0) {
                 method = line.substring(0,line.indexOf(' '));

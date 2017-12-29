@@ -11,7 +11,7 @@ COPY Main.java	.
 RUN javac Main.java
 
 ENV fprocess="java Main"
-
+ENV mode=afterburn
 HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
 CMD ["fwatchdog"]
