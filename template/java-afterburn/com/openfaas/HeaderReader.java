@@ -34,7 +34,9 @@ public class HeaderReader {
             if (character == '\r') {
                 continue;
             }
+
             buffer.write(character);
+
             if (character == '\n') {
                 break;
             }
