@@ -1,5 +1,12 @@
-# java-openfaas-fast-fork
-Java running in Fast Fork mode on OpenFaaS
+# java-afterburn
+
+## Status
+
+AfterBurn is in incubation under the [of-watchdog project](https://github.com/openfaas-incubator/of-watchdog). It is due to be deprecated by the HTTP mode for the of-watchdog.
+
+## Description
+
+Java running in AfterburnMode mode on OpenFaaS
 
 * For notes on how this works please see the `Optimizing for performance` section of the Watchdog notes:
 
